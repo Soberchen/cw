@@ -47,13 +47,13 @@ layui.use(['form', 'layedit', 'laydate'], function(){
 			data:data,
 			tyep:"post",
 			success:function(data){
-				if(data >0){
+				if(data==1){
 					layer.msg("用户信息修改成功");
 					setTimeout(function(){
-						layer.closeAll("iframe");
+						parent.layer.closeAll("iframe");
 			            //刷新父页面
 			           //parent.location.reload();
-			            parent.layui.table.reload("newsList"); 
+						parent.layui.table.reload("newsList");
 		        	},1000);
 				}else{
 					layer.msg("系统异常");

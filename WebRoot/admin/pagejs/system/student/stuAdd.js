@@ -97,8 +97,7 @@ layui.use(['form', 'layedit', 'laydate'], function(){
 					setTimeout(function(){
 						parent.layer.closeAll("iframe");
 			            //刷新父页面
-//  			            parent.location.reload();
-					
+//  			            parent.location.reload();					
 						parent.layui.table.reload("newsList");
 		        	},1000);
 				}else{
